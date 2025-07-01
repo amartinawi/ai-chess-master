@@ -6,7 +6,7 @@
 
 A comprehensive chess match system that allows two AI agents to play against each other, supporting multiple LLM providers including OpenAI, Anthropic Claude, and OpenRouter. Watch AI models battle it out on the chessboard with real-time visualization and detailed analytics.
 
-![AI Chess Match Demo](docs/images/demo-screenshot.png)
+
 
 ## 🎯 **Quick Start**
 
