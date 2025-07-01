@@ -1,0 +1,115 @@
+name: 💡 Feature Request
+description: Suggest a new feature or improvement
+title: "[FEATURE] "
+labels: ["enhancement", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        We love new ideas! Thanks for suggesting a feature to make AI Chess Match System better! 🎯
+        
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem Statement
+      description: What problem does this feature solve? What's the use case?
+      placeholder: "I'm frustrated when... / It would be helpful if..."
+    validations:
+      required: true
+      
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed Solution
+      description: Describe the solution you'd like to see
+      placeholder: "I would like..."
+    validations:
+      required: true
+      
+  - type: dropdown
+    id: category
+    attributes:
+      label: Feature Category
+      description: What category does this feature fall into?
+      options:
+        - AI Models/Providers
+        - Chess Game Engine
+        - User Interface
+        - Performance/Optimization
+        - Analytics/Logging
+        - API/Integration
+        - Documentation
+        - Other
+    validations:
+      required: true
+      
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      description: How important is this feature to you?
+      options:
+        - Low - Nice to have
+        - Medium - Would improve experience
+        - High - Critical for my use case
+    validations:
+      required: true
+      
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives Considered
+      description: What alternatives or workarounds have you considered?
+      placeholder: "I've tried... / Alternative approaches could be..."
+      
+  - type: textarea
+    id: implementation
+    attributes:
+      label: Implementation Ideas
+      description: Do you have any ideas on how this could be implemented?
+      placeholder: "This could work by... / Maybe we could use..."
+      
+  - type: textarea
+    id: examples
+    attributes:
+      label: Examples/Mockups
+      description: Any examples, mockups, or references that would help explain the feature?
+      placeholder: "Similar to... / Like this example..."
+      
+  - type: checkboxes
+    id: scope
+    attributes:
+      label: Feature Scope
+      description: What aspects would this feature include? (Check all that apply)
+      options:
+        - label: Frontend UI changes
+        - label: Backend API changes
+        - label: Database/Storage changes
+        - label: AI model integration
+        - label: Performance optimization
+        - label: Documentation updates
+        - label: New configuration options
+        
+  - type: checkboxes
+    id: contribution
+    attributes:
+      label: Contribution
+      description: Would you be willing to contribute to this feature?
+      options:
+        - label: I would like to implement this feature myself
+        - label: I can help with testing
+        - label: I can help with documentation
+        - label: I can provide feedback during development
+        
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Checklist
+      description: Please confirm the following
+      options:
+        - label: I have searched existing issues to ensure this is not a duplicate
+          required: true
+        - label: This feature would benefit other users, not just my specific use case
+          required: true
+        - label: I understand this is a feature request and not a bug report
+          required: true

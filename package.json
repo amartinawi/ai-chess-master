@@ -1,0 +1,27 @@
+{
+  "name": "ai-chess-match",
+  "version": "1.0.0",
+  "description": "Chess match system between AI agents with multiple LLM support",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "chess.js": "^1.0.0-beta.6",
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.1",
+    "ws": "^8.14.2",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.8.0"
+  },
+  "keywords": ["chess", "ai", "llm", "openai", "claude", "openrouter"],
+  "author": "",
+  "license": "MIT"
+}

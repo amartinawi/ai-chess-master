@@ -1,0 +1,151 @@
+name: 🚀 Performance Issue
+description: Report performance problems or optimization suggestions
+title: "[PERFORMANCE] "
+labels: ["performance", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Help us optimize AI Chess Match System! 🚀 Performance issues are important to us.
+        
+  - type: textarea
+    id: description
+    attributes:
+      label: Performance Issue Description
+      description: Describe the performance problem you're experiencing
+      placeholder: "The application is slow when... / Response times are high for..."
+    validations:
+      required: true
+      
+  - type: dropdown
+    id: performance_type
+    attributes:
+      label: Performance Issue Type
+      description: What type of performance issue is this?
+      options:
+        - Slow AI response times
+        - High memory usage
+        - Chess board rendering lag
+        - WebSocket connection issues
+        - API request bottlenecks
+        - Cache performance
+        - Database/Storage speed
+        - Other
+    validations:
+      required: true
+      
+  - type: textarea
+    id: measurements
+    attributes:
+      label: Performance Measurements
+      description: |
+        Please provide specific measurements if available
+      placeholder: |
+        - Response time: X seconds
+        - Memory usage: X MB
+        - CPU usage: X%
+        - Network requests: X/minute
+        - Cache hit rate: X%
+      render: markdown
+    validations:
+      required: true
+      
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment Details
+      description: |
+        Environment information that might affect performance
+      value: |
+        - OS: 
+        - Browser: 
+        - Node.js version: 
+        - RAM: 
+        - CPU: 
+        - Network speed: 
+        - AI Models used: 
+        - Game settings (Fast Mode, Analysis, Cache): 
+      render: markdown
+    validations:
+      required: true
+      
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to Reproduce
+      description: How can we reproduce this performance issue?
+      placeholder: |
+        1. Configure game with...
+        2. Start match between...
+        3. Observe performance during...
+    validations:
+      required: true
+      
+  - type: textarea
+    id: expected_performance
+    attributes:
+      label: Expected Performance
+      description: What performance would you expect?
+      placeholder: "I expected response times under... / Memory usage should be..."
+    validations:
+      required: true
+      
+  - type: textarea
+    id: optimization_ideas
+    attributes:
+      label: Optimization Ideas
+      description: Do you have any ideas for optimization?
+      placeholder: "Maybe we could... / Consider using... / I noticed that..."
+      
+  - type: textarea
+    id: workarounds
+    attributes:
+      label: Current Workarounds
+      description: Any workarounds you're currently using?
+      placeholder: "I've found that... / Using these settings helps..."
+      
+  - type: dropdown
+    id: impact
+    attributes:
+      label: Impact Level
+      description: How much does this affect your usage?
+      options:
+        - Low - Minor inconvenience
+        - Medium - Affects usability
+        - High - Makes feature unusable
+        - Critical - Blocks core functionality
+    validations:
+      required: true
+      
+  - type: textarea
+    id: logs
+    attributes:
+      label: Performance Logs/Data
+      description: Any performance logs, screenshots, or profiling data
+      placeholder: "Paste logs here or attach performance screenshots"
+      
+  - type: checkboxes
+    id: configuration
+    attributes:
+      label: Optimization Settings Tried
+      description: Which optimization settings have you tried? (Check all that apply)
+      options:
+        - label: Fast Mode enabled
+        - label: Analysis mode disabled
+        - label: Cache enabled
+        - label: Tried different AI models
+        - label: Adjusted token limits
+        - label: Modified temperature settings
+        
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Checklist
+      description: Please confirm the following
+      options:
+        - label: I have searched existing issues for similar performance problems
+          required: true
+        - label: I have tried basic optimization settings (Fast Mode, Cache)
+          required: true
+        - label: I can provide additional testing if needed
+          required: false

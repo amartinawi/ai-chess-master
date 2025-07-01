@@ -1,0 +1,91 @@
+name: ❓ Question
+description: Ask a question about AI Chess Match System
+title: "[QUESTION] "
+labels: ["question", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Got a question? We're here to help! 🤝
+        
+        **Before asking:** Please check if your question is already answered in:
+        - [README.md](https://github.com/yourusername/ai-chess-match#readme)
+        - [Documentation](https://github.com/yourusername/ai-chess-match/tree/main/docs)
+        - [Existing discussions](https://github.com/yourusername/ai-chess-match/discussions)
+        
+  - type: textarea
+    id: question
+    attributes:
+      label: Your Question
+      description: What would you like to know?
+      placeholder: "How do I... / What is the best way to... / Can I..."
+    validations:
+      required: true
+      
+  - type: dropdown
+    id: category
+    attributes:
+      label: Question Category
+      description: What is your question about?
+      options:
+        - Installation/Setup
+        - AI Models/Configuration
+        - Chess Game Features
+        - Performance/Optimization
+        - API Usage
+        - Development/Contributing
+        - Troubleshooting
+        - General Usage
+        - Other
+    validations:
+      required: true
+      
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: Provide any relevant context about what you're trying to achieve
+      placeholder: "I'm trying to... / My goal is to... / I'm working on..."
+      
+  - type: textarea
+    id: attempted
+    attributes:
+      label: What Have You Tried?
+      description: What have you already tried or researched?
+      placeholder: "I've looked at... / I tried... / I found this but..."
+      
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment (if relevant)
+      description: |
+        If your question is technical, please provide environment details
+      value: |
+        - OS: 
+        - Node.js version: 
+        - AI Models: 
+        - Setup type: (local development / production)
+      render: markdown
+      
+  - type: checkboxes
+    id: research
+    attributes:
+      label: Research Checklist
+      description: Please confirm you've checked these resources
+      options:
+        - label: I have read the README.md
+        - label: I have checked the documentation
+        - label: I have searched existing issues and discussions
+        - label: I have looked at the troubleshooting section
+          
+  - type: dropdown
+    id: urgency
+    attributes:
+      label: Urgency
+      description: How urgent is this question for you?
+      options:
+        - Low - Just curious
+        - Medium - Would help my project
+        - High - Blocking my work
+    validations:
+      required: true
